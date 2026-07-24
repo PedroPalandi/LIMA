@@ -1,3 +1,44 @@
 *{
-    background-color: aliceblue;
+    body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        to bottom,
+        #0c59de 15%,
+        #2d84e9 35%,
+        #4ea8de 70%,
+        #caf0f8 100%
+            
+    );
+
+    background-repeat: no-repeat;   
+}
+    
+}  
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+body {
+    margin: 0;
+    padding-bottom: 70px; /* Ajuste conforme a altura do rodapé (footer) */
+}
+.imagem{
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertical */
+    height: 100vh;           /* Altura da tela */
+}
+.imagem img {
+    max-width: 100%;
+    height: auto;
 }
