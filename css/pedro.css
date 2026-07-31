@@ -1,0 +1,13 @@
+body{
+    background-image: url(Ayrton-Senna.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#texto{
+    background-color: antiquewhite;
+    opacity: 0.5;
+    text-align: center;
+
+}
