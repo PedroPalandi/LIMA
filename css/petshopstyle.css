@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #ff6f61;
-    --secondary-color: #f96966;
-    --background-color: #f4f4f9;
-    --text-color: #333;
+    --primary-color: #48a74d;
+    --secondary-color: #a3ff61;
+    --background-color: #222;
+    --text-color: #bababc;
     --light-text-color: #666;
     --border-radius: 12px;
 }
@@ -101,6 +101,11 @@ body {
 .sidebar-link li a:hover {
     color: var(--secondary-color);
 }
+.sidebar img{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: var(--border-radius);
+    }
  
 .cards {
     width: 70%;
@@ -160,5 +165,22 @@ body {
 @media(max-width: 768px){
     .main-content{
         flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .cards{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+    .nav-links{
+        display: none;
+        
+    }
+    .menu-toggle{
+        display: block;
     }
 }

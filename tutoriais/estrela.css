@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+.estrelinha{
+    color: gold;
+    position: fixed;
+    pointer-events: none;
+    font-size: 12px;
+    content: "&#10022;";
+    animation: caiEDesvanece 800ms ease-out;
+    text-shadow: 0 0 6px #ffeb3B, 0 0 10px #ff9800;
+}
+
+@keyframes caiEDesvanece{
+    0%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--xAleatorio), 40px) scale(0.3) rotate(45deg);
+    }
+}
