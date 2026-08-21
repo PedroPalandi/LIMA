@@ -2,18 +2,18 @@ document.addEventListener("DOMContentLoaded", Listener = () => {
     const prevButton = document.querySelector(".carousel-btn.prev");
     const nextButton = document.querySelector(".carousel-btn.next");
     const carouselContainer = document.querySelector(".carousel-container");
-    const carouselItems = document.querySelectorAll("carousel-item");
+    const carouselItems = document.querySelectorAll(".carousel-item");
     const totalItems = carouselItems.length;
     let currentIndex = 0;
 
     const changeSlide = () => {
      carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`   
     }
-    const nextSlide = () =>{
+    const nextSlide = () => {
         currentIndex = (currentIndex + 1 ) % totalItems;     
         changeSlide();
     }
-    const prevSlide = () =>{
+    const prevSlide = () => {
         currentIndex = (currentIndex - 1 + totalItems) % totalItems;
         changeSlide();
     }
